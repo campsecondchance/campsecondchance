@@ -82,6 +82,10 @@ h3{
   margin: 0px;
   text-align: right;
 }
+.Title h2 a{
+  color: white;
+  font-size: xx-large;
+}
 
 .FBLink{
   position: absolute;
