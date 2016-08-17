@@ -30,13 +30,13 @@
 .Header{
     display: -webkit-flex;
     display: flex;
-    height:26vh;
-
+    height: 8em;
+    
     margin: 0px;
     background-image: url(../assets/images/logo.png);
     background-repeat: no-repeat;
-    background-size: auto 23vh;
-    background-position: 8vw 1.5vh ;
+    background-size: auto 7em;
+    background-position: 8vw 0.5em;
 }
 a{
   color:#809361;
@@ -47,17 +47,18 @@ a:hover{
 }
 
 h1{
-  font-size: 4vh;
+  font-size: 2em;
   margin: 5px;
   text-align: left;
 }
 h2{
-  font-size:3.5vh;
+  font-size:1.5em;
   margin: 5px;
   text-align: left;
 }
 h3{
-  font-size: 3vh;
+  font-size: 1.1em;
+  font-weight: bold;
   margin: 5px;
   text-align: left;
 }
@@ -74,9 +75,9 @@ h3{
   text-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
 }
 .Title h1{
-  font-size: 4vw;
   text-align: left;
   margin:0px;
+  font-size: 3em;
 }
 .Title h2{
   margin: 0px;
@@ -100,7 +101,7 @@ h3{
   display: flex;
   display: -webkit-flex;
   justify-content: flex-end;
-  top: 22vh;
+  top: 6.8em;
   right: 1.5vw;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -116,7 +117,6 @@ h3{
   box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
   color: rgb(255, 255, 255);
   padding: 10px;
-  font-size: 3vh;
   z-index: 200;
   text-decoration: none;
 }
@@ -136,13 +136,13 @@ h3{
   background-color: rgb(152, 176, 111);
   box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
   color: rgb(255, 255, 255);
-  font-size:2.5vh;
 }
 .NavBar a{
   color: rgb(255, 255, 255);
   display: block;
   text-decoration: none;
   padding: 4px 10px;
+  font-size: 1.3em;
 }
 .NavBar a:hover {
   color: #726e60;
@@ -156,7 +156,7 @@ h3{
   z-index: 100;
   box-sizing: border-box;
   margin: 0px;
-  padding: 5vh 20vw;
+  padding: 2.5em 15vw;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -171,18 +171,11 @@ h3{
   background-image: url(../assets/images/LogoBig.png);
   background-repeat: no-repeat;
   background-position: 5vw 2.5vh;
-  text-align: justify;
   color: black;
 }
 
-@media screen and (orientation : portrait) and (max-width : 700px){
-  .Header{ height: 31vh;}
-  .Nav{ font-size: 3vw; }
-  h1{ font-size:4vw; }
-  h2{ font-size: 3.5vw; }
-  h3{ font-size: 3vw; }
-  .Title h1{ font-size: 7vw; }
-  .Main{ padding: 5vh 10vw; }
+.justify {
+    text-align: justify;
 }
 
 .TwoColumn{
@@ -240,7 +233,7 @@ li{
 }
 input[type=submit]{
   min-width: 165px;
-  margin:10px;
+  margin: 10px;
   padding: 5px;
   border-style: solid;
   border-width: 2px;
@@ -249,7 +242,6 @@ input[type=submit]{
   box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.004),0px 3px 0px 0px rgba(51, 51, 51, 0.51);
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  font-size:2.5vh;
 }
 
 }
@@ -261,3 +253,28 @@ input[type=submit]{
     background-size: cover;
   }
 }
+
+  .Urgent h3{
+    border-color:red;
+  }
+  .Moderate h3{
+    border-color:orange;
+  }
+  .Basic h3{
+    border-color:green;
+  }
+  .Wishful h3{
+    border-color:blue;
+  }
+
+  /*
+@media screen and (orientation : portrait) and (max-width : 700px){
+  .Header{ height: 31vh;}
+  .Nav{ font-size: 2em; }
+  h1{ font-size:2.8em; }
+  h2{ font-size: 2em; }
+  h3{ font-size: 1.3em; }
+  .Title h1{ font-size: 4em; }
+  .Main{ padding: 5vh 10vw; }
+}
+*/

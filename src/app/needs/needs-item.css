@@ -20,20 +20,8 @@
         1px -1px 0 #000,
        -1px 1px 0 #000,
         1px 1px 0 #000;
-    font-size: 3vh;
   }
-  .Urgent h3{
-    border-color:red;
-  }
-  .Moderate h3{
-    border-color:orange;
-  }
-  .Basic h3{
-    border-color:green;
-  }
-  .Wishful h3{
-    border-color:blue;
-  }
+
 
   .usage {
       font-weight: bold;
